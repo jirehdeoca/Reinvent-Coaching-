@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reinvent International</title>
+  <title>Reinvent International – Transforming Leaders</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -14,96 +14,215 @@
       --charcoal: #2D2D2D;
     }
 
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
       background-color: var(--light-gray);
       color: var(--charcoal);
+      line-height: 1.6;
     }
 
     header {
       background-color: var(--primary);
       color: var(--white);
-      padding: 1rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
     header h1 {
       font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
       margin: 0;
-      font-size: 1.5rem;
     }
 
     .tagline {
-      font-size: 0.9rem;
-      margin-top: 0.25rem;
+      font-size: 1rem;
       color: var(--accent);
+      margin-top: 0.5rem;
     }
 
-    main {
-      padding: 1rem;
-    }
-
-    .card {
+    .hero {
+      padding: 2rem 1rem;
+      text-align: center;
       background-color: var(--white);
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
-    .card h2 {
+    .hero h2 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 1.2rem;
-      margin-top: 0;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
     }
 
     .button {
-      display: inline-block;
       background-color: var(--primary);
       color: var(--white);
-      padding: 0.75rem 1.25rem;
+      padding: 0.75rem 1.5rem;
       border-radius: 4px;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
       margin-top: 1rem;
+    }
+
+    .section {
+      padding: 2rem 1rem;
+      background-color: var(--light-gray);
+    }
+
+    .section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .features, .testimonials {
+      display: grid;
+      gap: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .feature, .testimonial {
+      background-color: var(--white);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .feature h4 {
+      margin-top: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--primary);
+    }
+
+    .faith-toggle {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .faith-toggle label {
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    .cta {
+      background-color: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .cta h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     footer {
       text-align: center;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: var(--charcoal);
       padding: 1rem;
+      background-color: var(--white);
+    }
+
+    @media (min-width: 600px) {
+      .features, .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Reinvent International</h1>
     <div class="tagline">Transforming Leaders. Shaping Destinies.</div>
   </header>
 
-  <main>
-    <div class="card">
-      <h2>Welcome to the App</h2>
-      <p>Empowering faith-driven leaders through transformational learning and coaching.</p>
-      <a href="#" class="button">Get Started</a>
+  <section class="hero">
+    <h2>Empowering Faith-Driven Leaders</h2>
+    <p>Our mobile-first coaching platform integrates transformational leadership, ontological coaching, and faith-based growth to help you lead with purpose and power.</p>
+    <a href="#" class="button">Launch the App</a>
+  </section>
+
+  <section class="section">
+    <h3>Core Features</h3>
+    <div class="features">
+      <div class="feature">
+        <h4>📘 Leadership Courses</h4>
+        <p>Access beginner to certification-level content with videos, PDFs, and reflection prompts.</p>
+      </div>
+      <div class="feature">
+        <h4>🎯 Coaching System</h4>
+        <p>Book 1-on-1 or group sessions with certified coaches and track your growth.</p>
+      </div>
+      <div class="feature">
+        <h4>💬 Community Hub</h4>
+        <p>Join discussions, attend events, and connect with like-minded leaders.</p>
+      </div>
+      <div class="feature">
+        <h4>🏆 Gamified Progress</h4>
+        <p>Earn badges, complete weekly challenges, and climb the leaderboard.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Faith-Based Add-ons</h3>
+    <div class="features">
+      <div class="feature">
+        <h4>📖 Daily Devotionals</h4>
+        <p>Start your day with scripture and guided reflection.</p>
+      </div>
+      <div class="feature">
+        <h4>🕊️ Kingdom Tracker</h4>
+        <p>Visualize your spiritual growth alongside your leadership journey.</p>
+      </div>
+      <div class="feature">
+        <h4>🔍 Ontological Distinctions</h4>
+        <p>Explore key distinctions like Being vs Doing and Trust vs Mistrust.</p>
+      </div>
     </div>
 
-    <div class="card">
-      <h2>Core Features</h2>
-      <ul>
-        <li>Leadership Course Library</li>
-        <li>1-on-1 & Group Coaching</li>
-        <li>Faith-Based Devotionals</li>
-        <li>Gamified Progress & Badges</li>
-        <li>Community Hub & Events</li>
-      </ul>
+    <div class="faith-toggle">
+      <label for="faithToggle">Faith Mode:</label>
+      <input type="checkbox" id="faithToggle" checked />
     </div>
-  </main>
+  </section>
+
+  <section class="section">
+    <h3>What Leaders Are Saying</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>“This app helped me rediscover my calling and lead with clarity. The coaching was life-changing.”</p>
+        <strong>– Maria D., Church Leader</strong>
+      </div>
+      <div class="testimonial">
+        <p>“The integration of faith and leadership is exactly what I needed. Reinvent is a blessing.”</p>
+        <strong>– James O., Entrepreneur</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h3>Ready to Transform Your Leadership?</h3>
+    <a href="#" class="button">Join Reinvent Now</a>
+  </section>
 
   <footer>
     &copy; 2025 Reinvent International. All rights reserved.
   </footer>
+
 </body>
 </html>
