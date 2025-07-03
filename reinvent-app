@@ -1,0 +1,24 @@
+reinvent-app/
+├── App.js
+├── package.json
+├── theme/
+│   ├── colors.js
+│   └── typography.js
+├── contexts/
+│   └── SettingsContext.js
+├── navigation/
+│   ├── MainTabNavigator.js
+│   └── OnboardingStack.js
+├── screens/
+│   ├── OnboardingScreen.js
+│   ├── DashboardScreen.js
+│   ├── CourseLibraryScreen.js
+│   ├── CourseDetailScreen.js
+│   ├── CoachingScreen.js
+│   ├── CommunityScreen.js
+│   └── ProfileScreen.js
+└── components/
+    ├── ProgressRing.js
+    ├── CourseCard.js
+    ├── CoachCard.js
+    └── ToggleSwitch.js
